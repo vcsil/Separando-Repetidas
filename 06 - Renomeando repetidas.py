@@ -7,7 +7,7 @@ Created on Thu Feb 11 18:15:54 2021
 
 import pandas as pd
 
-dados = pd.read_csv('C:/Users/vinic/Downloads/Dataset/01/import pothole.csv')
+dados = pd.read_csv('diretorio do  arquivo CSV')
 
 #dados = dados.rename(columns = {'Group ID': 'ID', 'Filename': 'Filename', 'Folder': 'Folder', 'Size (KB)': 'Size', 'Dimensions': 'Dimensions', 'Match %': 'Match'})
 
@@ -64,36 +64,6 @@ for nome in range(len(fotos)):
         
     reinicio_compara = grupo[nome]
 
-'''n = 0
-for nome in l:
-    
-    reinicio = grupo[n]
-    
-    if n > 0:
-        if reinicio == reinicio_compara:
-            pass
-        else:
-            pos = 1
-    
-    # alterar conforme sua necessidade de geração de nomes e layout de arquivos
-    novo_nome = str(grupo[n]) + ' - ' + str(pos) +  arq
-
-    
-    try:
-            os.rename(path + '/' + nome, path + '/' + novo_nome )
-            pos += 1
-    except:
-        while novo_nome in l:
-            indice = l.index(novo_nome)
-            l.pop(indice)
-            
-            pos += 1
-            novo_nome = str(pos) + arq
-
-        os.rename(path + '/' + nome, path + '/' + novo_nome )
-        
-    reinicio_compara = grupo[n]
-    n += 1'''
 
 
 
